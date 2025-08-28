@@ -121,7 +121,7 @@ The duration is extracted from the MIDI file and converted to seconds.
 ## Why 800 Hz and 8-bit?
 
 - **800 Hz** is a compromise between quality and memory usage. The SPC700 can handle higher rates, but lower rates are preferred for longer samples and effects.
-- **8-bit unsigned** is the native format for SPC700 samples, making conversion straightforward.
+- **8-bit unsigned** is a very light format for SPC700 samples, SPC700 works with signed 16 bit BRR compressed audio samples, then using an even more lightweight format makes conversion more convinient.
 
 ## Example: Generating a 440 Hz Square Wave
 
